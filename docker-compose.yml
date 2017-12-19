@@ -1,0 +1,9 @@
+version: "2"
+
+services:
+  app:
+    image: golang
+    volumes:
+      - .:/go/src/test
+    working_dir: /go/src/test
+    command: go run main.go
